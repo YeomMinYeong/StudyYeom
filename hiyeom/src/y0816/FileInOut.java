@@ -14,8 +14,6 @@ public class FileInOut {
 			      InputStream ois = null;
 			      try {
 			         fis = new FileInputStream("d:\\app\\OX.txt");
-			     
-
 			         int i = 0;
 			         while(true) {
 			            i = ois.read();
@@ -34,7 +32,7 @@ public class FileInOut {
 			   }
 		   
 		   public static void output() { 
-		      System.out.print("����:");
+		      System.out.print("아웃:");
 		      FileOutputStream fos=null;
 		      byte [] b=null;
 		      String str=null;
@@ -43,7 +41,7 @@ public class FileInOut {
 		         str = s.nextLine();
 		         b = str.getBytes();
 		         fos.write(b);
-		         System.out.println("���� �ۼ� �Ϸ�!!");
+		         System.out.println("");
 		      } catch (Exception e) {
 		         e.printStackTrace();
 		      }finally {
